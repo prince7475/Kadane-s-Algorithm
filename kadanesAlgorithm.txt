@@ -1,0 +1,18 @@
+write a function that takes an array or integers and returns
+the maximum sum that can be obtained by summing up all the numbers.
+A subarray must only contain adjacent numbers
+
+function kadanesAlgorithm(array){
+
+}
+
+// create our Maxarray// same size === array.length
+
+loop through idx = 1
+  let currNum = array[idx]
+  let lastMaxSum = maxArr[idx - 1]
+  maxArr[idx] = Math.max(currNum, lastMaxSum + currNum)
+  
+  
+  return Math.max(...maxArr)
+  
